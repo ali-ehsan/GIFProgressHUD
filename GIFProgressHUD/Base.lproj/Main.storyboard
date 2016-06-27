@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GIFExampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZX5-in-QBe" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-ah-4Qt">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A23-rh-RiI">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="370"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hs-HN-2LG">
+                                                        <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="b5w-Oc-BTN"/>
+                                                        </constraints>
+                                                        <state key="normal" title="HUD with GIF"/>
+                                                        <connections>
+                                                            <action selector="hudWithGIFSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eH7-BC-aF2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbw-Dq-oI2">
+                                                        <rect key="frame" x="20" y="70" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="vSb-sg-XiW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="HUD with GIF and Title"/>
+                                                        <connections>
+                                                            <action selector="hudWithGIFAndTitleSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20d-Ob-ffB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-pY-zxi">
+                                                        <rect key="frame" x="20" y="120" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="2gP-9A-VUO"/>
+                                                        </constraints>
+                                                        <state key="normal" title="HUD with GIF Title and Detail Title"/>
+                                                        <connections>
+                                                            <action selector="hudWithGIFAndTitleAndDetailTitleSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4M1-Wm-hwH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o84-lp-7vi">
+                                                        <rect key="frame" x="20" y="170" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="SJN-m6-f1a"/>
+                                                        </constraints>
+                                                        <state key="normal" title="HUD with GIF with Progress Example"/>
+                                                        <connections>
+                                                            <action selector="hudWithGIFWithProgressExampleSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezz-uf-Spz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXd-lJ-ueg">
+                                                        <rect key="frame" x="20" y="220" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="ll6-7d-vet"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Custom HUD"/>
+                                                        <connections>
+                                                            <action selector="customHUDSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9P6-gD-M6O"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sN1-cz-AlX">
+                                                        <rect key="frame" x="20" y="270" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="313-wL-J8P"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Just Label"/>
+                                                        <connections>
+                                                            <action selector="justLabelSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDP-tx-elT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-N8-PgT">
+                                                        <rect key="frame" x="20" y="320" width="560" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="8dU-e3-WHa"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Label and Detail Label"/>
+                                                        <connections>
+                                                            <action selector="labelAndDetailLabelSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfA-Wt-4Mk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="kbw-Dq-oI2" firstAttribute="top" secondItem="5hs-HN-2LG" secondAttribute="bottom" constant="20" id="2XD-7k-S9b"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hr7-N8-PgT" secondAttribute="bottom" constant="20" id="9jU-53-KYu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hr7-N8-PgT" secondAttribute="trailing" constant="20" id="DWJ-dW-q1u"/>
+                                                    <constraint firstItem="hKZ-pY-zxi" firstAttribute="top" secondItem="kbw-Dq-oI2" secondAttribute="bottom" constant="20" id="Fvl-Xm-v0B"/>
+                                                    <constraint firstItem="o84-lp-7vi" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="GAq-of-1QV"/>
+                                                    <constraint firstItem="sN1-cz-AlX" firstAttribute="top" secondItem="GXd-lJ-ueg" secondAttribute="bottom" constant="20" id="IJv-G5-6ql"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GXd-lJ-ueg" secondAttribute="trailing" constant="20" id="LmR-0X-rYz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="o84-lp-7vi" secondAttribute="trailing" constant="20" id="Mfc-X0-WiE"/>
+                                                    <constraint firstItem="o84-lp-7vi" firstAttribute="top" secondItem="hKZ-pY-zxi" secondAttribute="bottom" constant="20" id="QGC-Hv-kcF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5hs-HN-2LG" secondAttribute="trailing" constant="20" id="SXb-OW-dHR"/>
+                                                    <constraint firstItem="5hs-HN-2LG" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="Yxt-jq-Jct"/>
+                                                    <constraint firstItem="GXd-lJ-ueg" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="Yzx-Y2-tWi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hKZ-pY-zxi" secondAttribute="trailing" constant="20" id="bYf-aC-372"/>
+                                                    <constraint firstItem="GXd-lJ-ueg" firstAttribute="top" secondItem="o84-lp-7vi" secondAttribute="bottom" constant="20" id="eTt-Mm-cOS"/>
+                                                    <constraint firstItem="hKZ-pY-zxi" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="ihj-Kk-EDi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sN1-cz-AlX" secondAttribute="trailing" constant="20" id="kCD-tL-Bgw"/>
+                                                    <constraint firstItem="hr7-N8-PgT" firstAttribute="top" secondItem="sN1-cz-AlX" secondAttribute="bottom" constant="20" id="kWx-oh-kKj"/>
+                                                    <constraint firstItem="kbw-Dq-oI2" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="mgw-gk-IH9"/>
+                                                    <constraint firstItem="sN1-cz-AlX" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="sQx-qN-HaL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kbw-Dq-oI2" secondAttribute="trailing" constant="20" id="vEa-EK-poI"/>
+                                                    <constraint firstItem="hr7-N8-PgT" firstAttribute="leading" secondItem="A23-rh-RiI" secondAttribute="leading" constant="20" id="wFc-hm-G2v"/>
+                                                    <constraint firstItem="5hs-HN-2LG" firstAttribute="top" secondItem="A23-rh-RiI" secondAttribute="top" constant="20" id="yhy-MY-6qR"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="A23-rh-RiI" secondAttribute="trailing" id="6Po-Fq-RaR"/>
+                                            <constraint firstItem="A23-rh-RiI" firstAttribute="top" secondItem="PX5-ah-4Qt" secondAttribute="top" id="LdJ-fO-8fp"/>
+                                            <constraint firstAttribute="bottom" secondItem="A23-rh-RiI" secondAttribute="bottom" id="gpe-ep-sBA"/>
+                                            <constraint firstItem="A23-rh-RiI" firstAttribute="leading" secondItem="PX5-ah-4Qt" secondAttribute="leading" id="lK1-BE-sjx"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="PX5-ah-4Qt" firstAttribute="width" secondItem="ZX5-in-QBe" secondAttribute="width" id="DKb-ff-J0c"/>
+                                    <constraint firstAttribute="bottom" secondItem="PX5-ah-4Qt" secondAttribute="bottom" id="Dtr-vl-hKG"/>
+                                    <constraint firstAttribute="trailing" secondItem="PX5-ah-4Qt" secondAttribute="trailing" id="Oft-Js-6bT"/>
+                                    <constraint firstItem="PX5-ah-4Qt" firstAttribute="leading" secondItem="ZX5-in-QBe" secondAttribute="leading" id="aeQ-f1-j6w"/>
+                                    <constraint firstItem="PX5-ah-4Qt" firstAttribute="top" secondItem="ZX5-in-QBe" secondAttribute="top" id="lwk-3S-bNJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZX5-in-QBe" secondAttribute="bottom" id="B6i-ar-T7w"/>
+                            <constraint firstItem="ZX5-in-QBe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BuR-Sh-T6r"/>
+                            <constraint firstItem="ZX5-in-QBe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QzH-XL-Yhj"/>
+                            <constraint firstItem="PX5-ah-4Qt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="k6f-Mc-M4X"/>
+                            <constraint firstAttribute="trailing" secondItem="ZX5-in-QBe" secondAttribute="trailing" id="lu6-jq-cZP"/>
+                            <constraint firstItem="A23-rh-RiI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="vx1-90-Ecg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="k6f-Mc-M4X"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="ENf-45-Boq">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="lQw-IL-Yls"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="243"/>
+        </scene>
+    </scenes>
+</document>
