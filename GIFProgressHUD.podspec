@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GIFProgressHUD"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "GIFProgressHUD is a progress HUD with GIF for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ GIFProgressHUD is a progress HUD with GIF for iOS. It is very simple to use. You
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ali-ehsan/GIFProgressHUD.git", :commit => "373a8ae9c4a9fd8f145ee68d718ed180796af901", :tag => "v-1.0.1" }
+  s.source       = { :git => "https://github.com/ali-ehsan/GIFProgressHUD.git", :commit => "373a8ae9c4a9fd8f145ee68d718ed180796af901", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ GIFProgressHUD is a progress HUD with GIF for iOS. It is very simple to use. You
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GIFProgressHUD/**/*.{h,m}"
+  s.source_files  = "GIFProgressHUD/GIFProgressHUD/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
