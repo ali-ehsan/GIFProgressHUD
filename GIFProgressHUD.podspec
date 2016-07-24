@@ -80,7 +80,7 @@ GIFProgressHUD is a progress HUD with GIF for iOS. It is very simple to use. You
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/ali-ehsan/GIFProgressHUD.git", :commit => "0214c0d73d8a19faccd00cbb1f80e98489928ca7", :tag => "v-1.0.1" }
+  s.source       = { :git => "https://github.com/ali-ehsan/GIFProgressHUD.git", :commit => "373a8ae9c4a9fd8f145ee68d718ed180796af901", :tag => "v-1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
