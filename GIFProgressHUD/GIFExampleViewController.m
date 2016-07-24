@@ -88,7 +88,7 @@
         for (NSInteger i = 1; i <= 100; i++) {
             [NSThread sleepForTimeInterval:0.05];
             dispatch_async(dispatch_get_main_queue(), ^{
-                hud.detailTitleText = [NSString stringWithFormat:@"Please wait\n (%ld/100)", (long)i];
+                hud.detailTitleText = [NSString stringWithFormat:@"Please wait\n (%@/100)", @(i)];
             });
         }
         [NSThread sleepForTimeInterval:0.2];
