@@ -42,7 +42,7 @@ GIFProgressHUD is a progress HUD with GIF for iOS. With a single line of code yo
 [GIFProgressHUD showHUDWithGIFName:@"gears" title:@"Loading..." detailTitle:@"Please wait.\n Thanks for your patience." addedToView:self.view animated:YES];
 ```
 
-#### Show HUD with title and message
+#### Show custom HUD
 ```objective-c
 GIFProgressHUD *hud = [GIFProgressHUD showHUDWithGIFName:@"gears" title:@"Loading..." detailTitle:@"Please wait.\n Thanks for your patience." addedToView:self.view animated:YES];
     hud.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
