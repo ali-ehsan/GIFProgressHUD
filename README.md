@@ -1,5 +1,5 @@
 # GIFProgressHUD
-GIFProgressHUD is a progress HUD with GIF for iOS. With a single line of code you can show or hide a GIF for progress. GIFProgressHUD also provide great customization for those who want something different from default.
+GIFProgressHUD is a progress HUD with any GIF for iOS. With a single line of code you can show or hide a GIF for progress. GIFProgressHUD also provide great customization for those who want something different from default.
 
 # ScreenShots
 <img src="https://www.dropbox.com/s/xyccqsq677s141m/progress1.png?dl=0&&raw=1" alt="Drawing" width="200" />
